@@ -16,6 +16,9 @@
 header{
   background-color: #fff;
   padding: 15px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav{
@@ -45,11 +48,9 @@ nav{
 /* 一番大きいタイトル画像部分 */
 .background--img{
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
-}
-
-.content{
   padding: 400px 0;
 }
+
 
 .main--title{
   font-size: 65px;
@@ -71,12 +72,12 @@ nav{
 }
 
 /* WORK */
-#WORK{
+.work{
   background: #e3f2fd;
   padding-top: 50px;
 }
 
-.container{
+.work .inner{
   display: flex;
   flex-direction: row;
 }
@@ -91,7 +92,7 @@ nav{
   width: 250px;
 }
 
-.work--container{
+.text--area{
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -107,7 +108,7 @@ p{
 }
 
 /* SKILLS */
-#SKILLS{
+.skills{
   background: #fff;
   padding: 50px 0 70px;
 }
@@ -124,6 +125,7 @@ p{
   width: 300px;
   height: 300px;
   opacity: 0.7;
+  transition: 0.7s;
 }
 
 .skills-image:hover{
@@ -135,7 +137,7 @@ p{
 }
 
 /* select plan */
-#PLAN{
+.plan{
   background: #d0dfea;
   padding: 50px 0;
 }
@@ -171,14 +173,16 @@ th:first-child{
 }
 
 /* sns */
-.sns--container{
-  padding: 200px;
-  display: flex;
-  text-align: center;
-}
 
 .sns{
   background-color: #e3f2fd;
+  padding: 200px;
+}
+
+.icons{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .sns--img{
@@ -195,7 +199,6 @@ th:first-child{
 }
 
 /* footer */
-
 footer{
   background: #cfd8dc;
   padding: 20px 0 25px 0;
