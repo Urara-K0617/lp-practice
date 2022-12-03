@@ -117,9 +117,14 @@ p{
 .skills--area{
   display: flex;
   gap: 100px;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.skills--area:nth-child(3n){
+  flex-wrap: wrap;
 }
 
 .skills-image{
@@ -131,10 +136,6 @@ p{
 
 .skills-image:hover{
   opacity: 1.0;
-}
-
-.skills--container{
-  width: calc(33% - 200px);
 }
 
 /* select plan */
