@@ -250,27 +250,27 @@ p{
   }
 }
 
-li:nth-child(1) .skills--container{
+.skills--container:nth-child(1) {
   margin-top: 0;
 }
 
-li:nth-child(2) .skills--container{
+.skills--container:nth-child(2) {
   margin-top: 0;
 }
 
-li:nth-child(3) .skills--container{
+.skills--container:nth-child(3) {
   margin-top: 0;
 }
 
-li:nth-child(3n) .skills--container{
+.skills--container:nth-child(3n) {
   margin-right: 0;
 }
 
 @media screen and (max-width: 1199px) {
-li:nth-child(3n+1) .skills--container{
+  .skills--container:nth-child(3n+1) {
   margin-top: 80px;
   }
-  li:first-child .skills--container{
+  .skills--container:first-child {
   margin-top: 0;
   }
 }
